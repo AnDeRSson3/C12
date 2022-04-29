@@ -43,18 +43,18 @@ function draw() {
    drawSprites();
    
 var r;
-r = Math.round(random(1, 100))
+r = Math.round(random(1,3))
 
-if (frameCount%60==0){
+if (frameCount%80==0){
+  if (r==3){
   createApples();
-} else {
-  if (r%30==0){
+  }
+  if (r==1){
     createOrange();
   }
-}
-  if(r%28==0){
+  if(r==2){
     createRed();
-
+  }
 }
 
 
